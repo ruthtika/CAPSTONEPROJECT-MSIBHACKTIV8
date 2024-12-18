@@ -1,0 +1,210 @@
+body {
+  margin: 0;
+  padding: 0;
+  background-color: #f9faf8;
+}
+
+/* Navbar Styles */
+nav {
+  background-color: #1d0539;
+  padding: 10px 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.navbar-left ul {
+  list-style-type: none;
+  display: flex;
+  gap: 15px;
+  padding: 0;
+  margin: 0;
+}
+
+.navbar-left ul li a {
+  color: rgb(255, 251, 251);
+  text-decoration: none;
+  font-size: 16px;
+  padding: 8px;
+  border-radius: 4px;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-left ul li a:hover {
+  background-color: #271502;
+}
+
+.navbar-right input {
+  padding: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.navbar-right button {
+  padding: 6px 12px;
+  background-color: #f9a909;
+  color: rgb(4, 2, 2);
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.navbar-right button:hover {
+  background-color: #0056b3;
+}
+
+/* Page Headline Styles */
+.news-title {
+  text-align: center;
+  font-size: 2rem; 
+  font-weight: bold; 
+  margin-bottom: 10px; 
+  position: relative; 
+}
+
+.news-title::after {
+  content: ""; 
+  display: block;
+  width: 90%;
+  margin: 0 auto; 
+  border-bottom: 1px solid #000; 
+  margin-top: 20px; 
+}
+
+/* Article List Container */
+.article-list {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start; 
+  gap: 20px; 
+  max-width: 90%;
+  margin: 30px auto;
+}
+
+/* Article Card Styles */
+.article {
+  background-color: #fff;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  width: calc(25% - 20px); 
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between; 
+  height: 380px; 
+  transition: transform 0.2s ease-in-out;
+  overflow: hidden;
+}
+
+.article:hover {
+  transform: translateY(-5px);
+}
+
+.article img {
+  width: 100%;
+  height: 150px; 
+  object-fit: cover; 
+}
+
+.article h2 {
+  font-size: 16px;
+  font-weight: bold;
+  margin: 10px 15px;
+  text-align: center;
+}
+
+.article p {
+  font-size: 13px;
+  color: #666;
+  margin: 0 15px 10px;
+  text-align: center;
+  flex-grow: 1; 
+}
+
+.article-buttons {
+  margin: 10px 15px;
+  display: flex;
+  justify-content: space-between; 
+}
+
+.read-more-button,
+.save-button {
+  padding: 8px 12px;
+  font-size: 12px;
+  border-radius: 4px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+  margin-bottom: 10px;
+}
+
+.read-more-button {
+  background-color: #f9a909;
+  color: rgb(26, 22, 22);
+}
+
+.read-more-button:hover {
+  background-color: #57a5f9;
+}
+
+.save-button {
+  background-color: #000000;
+  color: rgb(252, 246, 246);
+}
+
+.save-button:hover {
+  background-color: #2b6815;
+}
+
+.read-more-button:hover,
+.save-button:hover {
+  opacity: 0.9;
+}
+
+/* Tombol Remove */
+.remove-button {
+  background-color: #c41728; 
+  color: white; 
+  padding: 10px 15px; 
+  font-size: 14px; 
+  border: none; 
+  border-radius: 4px; 
+  cursor: pointer; 
+  transition: background-color 0.3s ease, opacity 0.3s ease; 
+}
+
+.remove-button:hover {
+  background-color: #c82333; 
+  opacity: 0.9; 
+}
+
+
+/* Responsiveness */
+@media (max-width: 768px) {
+  .article {
+    width: 100%; 
+    margin: 10px 0;
+  }
+
+  .navbar-left ul {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+/*Pages Saved */
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+th, td {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+th {
+  background-color: #f4f4f4;
+  text-align: left;
+}
